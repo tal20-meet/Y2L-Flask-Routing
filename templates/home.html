@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Homeeeeeee!!!!!!!!!!!!!1</title>
 </head>
 <body>
+<a href="/store">Store</a>
+<a href="/about">About</a>
 
+{% if login%}
+	{% if login !=""%}
+		<a>hi {{login}}<a/>
+	{% else %}
+		<a>please log in<a/>
+		<a href="/log-in">click_here<a/>
+{% endif %}
+{% endif %}
 
 </body>
 </html>

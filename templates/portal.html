@@ -1,0 +1,28 @@
+<html>
+	<head>
+		
+	</head>
+	<body>
+		
+		 <table style="width:50%">
+  <tr>
+    <th>product id</th>
+    <th>product name</th>
+    <th>product price</th>
+    <th>product picture_link</th>
+    <th>product description</th>
+  </tr>
+{% for Product in products %}
+  <tr>
+    <td>{{Product.id}} </td>
+    <td>{{Product.name}}  <form action="" method="post">
+        <input type="text" placeholder="Enter updated name" name="new_name" value="{{request.form.new_name}}"></form>
+      </td>
+    <td>{{Product.price}}</td>
+    <td>{{Product.picture_link}}</td>
+    <td>{{Product.description}}</td>
+  </tr>
+{% endfor %}
+</table> 
+	</body>
+</html>
