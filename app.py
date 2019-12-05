@@ -76,9 +76,11 @@ def login():
 # 		return home()
 @app.route('/portal', methods=['GET', 'POST'])
 def portal():
+
 	return render_template("portal.html", products=allProducts())
 
 
 
 if __name__ == '__main__':
     app.run(debug=True)
+   meetyear20
